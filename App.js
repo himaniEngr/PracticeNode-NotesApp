@@ -5,9 +5,16 @@
 // const name = "Andrew";
 // console.log(firstName);
 
-const add = require("./utils.js");
-const sum = add(4, -2);
-console.log(sum);
+// const add = require("./utils.js");
+// const sum = add(4, -2);
+// console.log(sum);
 
+// const getNotes = require("./notes.js");
+// console.log(getNotes());
+
+const validator = require("validator");
 const getNotes = require("./notes.js");
-console.log(getNotes());
+console.log(validator.isEmail("abc@def.com"));
+console.log(validator.isEmail("adef.com"));
+console.log(validator.isURL("https://google.com"));
+console.log(validator.isURL("https/google.com"));
