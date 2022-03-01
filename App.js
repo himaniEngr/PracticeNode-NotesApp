@@ -5,6 +5,15 @@
 const chalk = require("chalk");
 console.log(chalk.red.bold("Error"));
 
+console.log(process.argv);
+
+const command = process.argv[2];
+if (command === "add") {
+  console.log("Adding note");
+} else if (command === "remove") {
+  console.log("Removing note");
+}
+
 // firstName = require("./utils.js");
 // fs = require("fs");
 // fs.writeFileSync("notes.txt", "created existing file ");
