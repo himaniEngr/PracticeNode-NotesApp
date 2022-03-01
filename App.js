@@ -3,7 +3,7 @@
 // console.log(chalk.green("Success"));
 
 const chalk = require("chalk");
-console.log(chalk.green("Success"));
+console.log(chalk.red.bold("Error"));
 
 // firstName = require("./utils.js");
 // fs = require("fs");
