@@ -1,3 +1,10 @@
+// import chalk from "chalk";
+// const chalk = require("chalk");
+// console.log(chalk.green("Success"));
+
+const chalk = require("chalk");
+console.log(chalk.green("Success"));
+
 // firstName = require("./utils.js");
 // fs = require("fs");
 // fs.writeFileSync("notes.txt", "created existing file ");
@@ -12,9 +19,9 @@
 // const getNotes = require("./notes.js");
 // console.log(getNotes());
 
-const validator = require("validator");
+// const validator = require("validator");
 const getNotes = require("./notes.js");
-console.log(validator.isEmail("abc@def.com"));
-console.log(validator.isEmail("adef.com"));
-console.log(validator.isURL("https://google.com"));
-console.log(validator.isURL("https/google.com"));
+// console.log(validator.isEmail("abc@def.com"));
+// console.log(validator.isEmail("adef.com"));
+// console.log(validator.isURL("https://google.com"));
+// console.log(validator.isURL("https/google.com"));
