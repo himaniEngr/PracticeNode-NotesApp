@@ -3,6 +3,8 @@
 // console.log(chalk.green("Success"));
 
 const chalk = require("chalk");
+const notes = require("./notes.js");
+
 console.log(chalk.red.bold("Error"));
 
 // console.log(process.argv);
@@ -18,9 +20,16 @@ yargs.command({
       demandOption: true,
       type: "string",
     },
+    body: {
+      describe: "body arg",
+      demandOption: true,
+      type: "string",
+    },
   },
   handler: function (argv) {
-    console.log("title: ", argv.title);
+    notes.addNote(argv.title, argv.body);
+    // console.log("title: ", argv.title);
+    // console.log("body: ", argv.body);
   },
 });
 
@@ -70,7 +79,6 @@ yargs.parse();
 // console.log(getNotes());
 
 // const validator = require("validator");
-const getNotes = require("./notes.js");
 // console.log(validator.isEmail("abc@def.com"));
 // console.log(validator.isEmail("adef.com"));
 // console.log(validator.isURL("https://google.com"));
